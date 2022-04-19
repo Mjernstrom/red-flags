@@ -9,9 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Red Flags")
-            .padding()
-            .background(Color.red)
+        Image("red-flag")
     }
 }
 
