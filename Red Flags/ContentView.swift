@@ -1,15 +1,22 @@
-//
 //  ContentView.swift
 //  Red Flags
-//
-//  Created by Matthew Jernstrom on 10/24/21.
-//
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Image("red-flag")
+        VStack {
+            Spacer()
+            Image("red-flag")
+            Spacer()
+            Text("Press to play")
+                .font(.system(size: 30, weight: .bold))
+                .padding()
+                .foregroundColor(.white)
+                .background(Color.black)
+            Spacer()
+        }
+        
     }
 }
 
