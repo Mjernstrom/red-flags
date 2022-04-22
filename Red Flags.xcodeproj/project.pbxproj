@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		97D307B52726697500C24196 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D307B42726697500C24196 /* ContentView.swift */; };
 		97D307B72726698100C24196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97D307B62726698100C24196 /* Assets.xcassets */; };
 		97D307BA2726698100C24196 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97D307B92726698100C24196 /* Preview Assets.xcassets */; };
+		97D94EBC281349D700535DB8 /* ToastUI in Frameworks */ = {isa = PBXBuildFile; productRef = 97D94EBB281349D700535DB8 /* ToastUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97D94EBC281349D700535DB8 /* ToastUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "Red Flags";
+			packageProductDependencies = (
+				97D94EBB281349D700535DB8 /* ToastUI */,
+			);
 			productName = "Red Flags";
 			productReference = 97D307AF2726697400C24196 /* Red Flags.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 97D307A62726697400C24196;
+			packageReferences = (
+				97D94EBA281349D700535DB8 /* XCRemoteSwiftPackageReference "ToastUI" */,
+			);
 			productRefGroup = 97D307B02726697400C24196 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		97D94EBA281349D700535DB8 /* XCRemoteSwiftPackageReference "ToastUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quanshousio/ToastUI";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		97D94EBB281349D700535DB8 /* ToastUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97D94EBA281349D700535DB8 /* XCRemoteSwiftPackageReference "ToastUI" */;
+			productName = ToastUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 97D307A72726697400C24196 /* Project object */;
 }
