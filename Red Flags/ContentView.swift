@@ -74,13 +74,22 @@ struct DudesView: View {
         "Drink if she's a psychology major."
     ]
     
+    let GameAction = [
+        "Drink once",
+        "Drink twice",
+        "Drink three times",
+        "Take a shot"
+    ]
+    
     var body: some View {
-        var Card = ""
+        var prompt = ""
+        var action = ""
         VStack {
             Spacer()
             Button {
                   PresentingToast = true
-                  Card = DudeList.randomElement()!
+                  prompt = DudeList.randomElement()!
+                  action = GameAction.randomElement()!
                 } label: {
                   Text("Hit Me")
                     .font(.system(size: 30, weight: .bold, design: .rounded))
@@ -92,7 +101,12 @@ struct DudesView: View {
                 .toast(isPresented: $PresentingToast) {
                   ToastView {
                     VStack {
-                      Text(Card)
+                      Text(prompt)
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                        .frame(width: 300, height: 100)
+                        .padding(.bottom)
+                        .multilineTextAlignment(.center)
+                      Text(action)
                         .font(.system(size: 20, weight: .bold, design: .rounded))
                         .frame(width: 300, height: 100)
                         .padding(.bottom)
@@ -139,13 +153,22 @@ struct ChicksView: View {
         "Drink if he is a political science major."
     ]
     
+    let GameAction = [
+        "Drink once",
+        "Drink twice",
+        "Drink three times",
+        "Take a shot"
+    ]
+    
     var body: some View {
-        var Card = ""
+        var prompt = ""
+        var action = ""
         VStack {
             Spacer()
             Button {
                   PresentingToast = true
-                  Card = ChickList.randomElement()!
+                  prompt = ChickList.randomElement()!
+                  action = GameAction.randomElement()!
                 } label: {
                   Text("Hit Me")
                     .font(.system(size: 30, weight: .bold, design: .rounded))
@@ -157,12 +180,16 @@ struct ChicksView: View {
                 .toast(isPresented: $PresentingToast) {
                   ToastView {
                     VStack {
-                      Text(Card)
+                      Text(prompt)
                         .font(.system(size: 20, weight: .bold, design: .rounded))
                         .frame(width: 300, height: 100)
                         .padding(.bottom)
                         .multilineTextAlignment(.center)
-
+                      Text(action)
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                        .frame(width: 300, height: 100)
+                        .padding(.bottom)
+                        .multilineTextAlignment(.center)
                       Button {
                         PresentingToast = false
                       } label: {
@@ -201,13 +228,22 @@ struct EverybodyView: View {
         "Drink if they have a religious quote in their bio."
     ]
     
+    let GameAction = [
+        "Drink once",
+        "Drink twice",
+        "Drink three times",
+        "Take a shot"
+    ]
+    
     var body: some View {
-        var Card = ""
+        var prompt = ""
+        var action = ""
         VStack {
             Spacer()
             Button {
                   PresentingToast = true
-                  Card = EverybodyList.randomElement()!
+                  prompt = EverybodyList.randomElement()!
+                  action = GameAction.randomElement()!
                 } label: {
                   Text("Hit Me")
                     .font(.system(size: 30, weight: .bold, design: .rounded))
@@ -219,7 +255,12 @@ struct EverybodyView: View {
                 .toast(isPresented: $PresentingToast) {
                   ToastView {
                     VStack {
-                      Text(Card)
+                      Text(prompt)
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                        .frame(width: 300, height: 100)
+                        .padding(.bottom)
+                        .multilineTextAlignment(.center)
+                      Text(action)
                         .font(.system(size: 20, weight: .bold, design: .rounded))
                         .frame(width: 300, height: 100)
                         .padding(.bottom)
