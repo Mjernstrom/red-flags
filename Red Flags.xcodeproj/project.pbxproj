@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		972F6F5D282B5DE8007A1AF9 /* DudesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F6F5C282B5DE8007A1AF9 /* DudesView.swift */; };
+		972F6F5F282B5EB2007A1AF9 /* GirlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F6F5E282B5EB2007A1AF9 /* GirlsView.swift */; };
+		972F6F61282B5FAF007A1AF9 /* EverybodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972F6F60282B5FAF007A1AF9 /* EverybodyView.swift */; };
 		97D307B32726697500C24196 /* Red_FlagsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D307B22726697500C24196 /* Red_FlagsApp.swift */; };
 		97D307B52726697500C24196 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D307B42726697500C24196 /* ContentView.swift */; };
 		97D307B72726698100C24196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97D307B62726698100C24196 /* Assets.xcassets */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		972F6F5C282B5DE8007A1AF9 /* DudesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DudesView.swift; sourceTree = "<group>"; };
+		972F6F5E282B5EB2007A1AF9 /* GirlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlsView.swift; sourceTree = "<group>"; };
+		972F6F60282B5FAF007A1AF9 /* EverybodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverybodyView.swift; sourceTree = "<group>"; };
 		97D307AF2726697400C24196 /* Red Flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Red Flags.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D307B22726697500C24196 /* Red_FlagsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Red_FlagsApp.swift; sourceTree = "<group>"; };
 		97D307B42726697500C24196 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,11 +60,14 @@
 		97D307B12726697400C24196 /* Red Flags */ = {
 			isa = PBXGroup;
 			children = (
+				972F6F5C282B5DE8007A1AF9 /* DudesView.swift */,
 				97D307B22726697500C24196 /* Red_FlagsApp.swift */,
 				97D307B42726697500C24196 /* ContentView.swift */,
 				97D307B62726698100C24196 /* Assets.xcassets */,
 				97D307BB2726698100C24196 /* Info.plist */,
 				97D307B82726698100C24196 /* Preview Content */,
+				972F6F5E282B5EB2007A1AF9 /* GirlsView.swift */,
+				972F6F60282B5FAF007A1AF9 /* EverybodyView.swift */,
 			);
 			path = "Red Flags";
 			sourceTree = "<group>";
@@ -146,7 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972F6F61282B5FAF007A1AF9 /* EverybodyView.swift in Sources */,
 				97D307B52726697500C24196 /* ContentView.swift in Sources */,
+				972F6F5D282B5DE8007A1AF9 /* DudesView.swift in Sources */,
+				972F6F5F282B5EB2007A1AF9 /* GirlsView.swift in Sources */,
 				97D307B32726697500C24196 /* Red_FlagsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -260,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
